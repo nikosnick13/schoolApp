@@ -24,11 +24,11 @@ public class Teacher extends AbstractEntity {
     @Column(nullable = false, updatable = false, unique = true)
     private UUID  uuid;
 
-    String firstname;
-    String lastname;
+    private String firstname;
+    private String lastname;
 
     @Column(unique = true)
-    public String vat;
+    private String vat;
 
     @PrePersist
     public void initializeUUID(){
