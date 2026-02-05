@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-public record TeachersInsertDTO(
+public record TeacherInsertDTO(
         //BeanValidation
         @NotNull(message = "Το όνομα δεν πρέπει αν είναι κενό")
         @Size(min=2, message = "Το όνομα πρέπει να περιέχει τουλάχιστον 2 χαρακτίρες")
@@ -23,8 +23,8 @@ public record TeachersInsertDTO(
 
     ) {
 
-    public static TeachersInsertDTO empty(){
-        return new TeachersInsertDTO("","","",0L);
+    public static TeacherInsertDTO empty(){
+        return new TeacherInsertDTO("","","",0L);
     }
 
 }
