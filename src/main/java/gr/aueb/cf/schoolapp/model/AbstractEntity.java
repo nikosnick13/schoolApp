@@ -12,7 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.Instant;
 
-@MappedSuperclass
+@MappedSuperclass //Διλωση οτι ειναι μονο super class και οτι μονο κλειρωνομιτε
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
