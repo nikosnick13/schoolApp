@@ -18,7 +18,7 @@ public record TeacherInsertDTO(
         @Pattern(regexp = "\\d{9,}", message = "Το ΑΦΜ δεν πρέπει να είναι μικρότερο απο 9 ψηφία" )
         String vat,
 
-        @NotNull(message = "Η περιο δεν πρέπει να ειναι κενή")
+        @NotNull(message = "Η περιοxή δεν πρέπει να ειναι κενή")
         Long regionId
 
     ) {
