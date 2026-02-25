@@ -3,14 +3,18 @@ package gr.aueb.cf.schoolapp.controller;
 
 import gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException;
 import gr.aueb.cf.schoolapp.core.exceptions.EntityInvalidArgumentException;
-import gr.aueb.cf.schoolapp.core.exceptions.EntityNotFountException;
 import gr.aueb.cf.schoolapp.dto.RegionReadOnlyDTO;
 import gr.aueb.cf.schoolapp.dto.TeacherInsertDTO;
 import gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO;
 import gr.aueb.cf.schoolapp.service.IRegionService;
 import gr.aueb.cf.schoolapp.service.ITeacherService;
+import gr.aueb.cf.schoolapp.validator.TeacherInsertValidator;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,7 +24,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Stream;
 
 @Controller
 @RequiredArgsConstructor
@@ -28,7 +35,8 @@ import java.util.List;
 public class TeacherController {
 
     private final ITeacherService teacherService;
-    private  final IRegionService regionService;
+    private final IRegionService regionService;
+    private final TeacherInsertValidator teacherInsertValidator;
 
     @GetMapping("/insert")
     public String getTeacherPage(Model model) {
@@ -40,6 +48,8 @@ public class TeacherController {
     @PostMapping("/insert")
     public String insertTeacher(@Valid @ModelAttribute("teacherInsertDTO")TeacherInsertDTO teacherInsertDTO,
                                  BindingResult bindingResult,Model model, RedirectAttributes redirectAttributes){
+
+        teacherInsertValidator.validate(teacherInsertDTO,bindingResult);
 
         if(bindingResult.hasErrors()){
             //model.addAttribute("teacherInsertDTO",regions());
@@ -61,7 +71,28 @@ public class TeacherController {
         }
 
         return  "redirect:/teachers/success";
+    }
 
+    public String getPaginationTeachers(@PageableDefault(page = 0, size = 5, sort = "lastname") Pageable pageable, Model model ){
+
+        Page<TeacherReadOnlyDTO> teacherPage = new PageImpl<>(
+                Stream.of(
+                        new TeacherReadOnlyDTO( "abc123", "Nikos","Nikolaidis","123","Athens"),
+                        new TeacherReadOnlyDTO( "abc123", "Gearge","Papapdopoylos","234","Athens"),
+                        new TeacherReadOnlyDTO( "abc123", "Theofilos","Kasimiw","2345","Athens"),
+                        new TeacherReadOnlyDTO( "abc123", "Panagiotis","Androytis","5623","Athens"),
+                        new TeacherReadOnlyDTO( "abc123", "Maria","Branaki","16453","Athens"),
+                        new TeacherReadOnlyDTO( "abc123", "Andriani","Ksanthopoulou ","65344","Athens"))
+                        .sorted(Comparator.comparing(TeacherReadOnlyDTO::lastname))
+                        .skip(pageable.getOffset())
+                        .limit(pageable.getPageSize())
+                        .toList(), pageable,5
+                );
+
+        model.addAttribute("teachers", teacherPage.getContent());
+        model.addAttribute("page",teacherPage);
+
+        return "teachers";
     }
 
     @GetMapping("/success")
@@ -73,6 +104,7 @@ public class TeacherController {
     public List<RegionReadOnlyDTO> regions(){
 
        return regionService.findAllRegionByName();
+
 //        return List.of(
 //                new RegionReadOnlyDTO(1L,"Αθήνα"),
 //                new RegionReadOnlyDTO(2L,"Θεσσαλονίκη"),
