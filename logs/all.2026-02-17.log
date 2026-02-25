@@ -1,0 +1,104 @@
+2026-02-17 11:13:47 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-17 11:13:47 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-17 11:13:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-17 11:24:43 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-17 11:24:43 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 368937 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-17 11:24:43 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-17 11:24:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-17 11:24:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+ 2026-02-17 11:24:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-17 11:24:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4321 ms
+ 2026-02-17 11:24:49 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-17 11:24:49 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.049s)
+ 2026-02-17 11:24:49 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-17 11:24:49 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-17 11:24:49 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-17 11:24:50 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-17 11:24:50 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-17 11:24:50 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-17 11:24:51 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-17 11:24:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-17 11:24:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-17 11:24:53 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 10.682 seconds (process running for 11.405)
+ 2026-02-17 11:24:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-17 11:24:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+ 2026-02-17 11:34:00 INFO  g.a.c.s.service.TeacherService - Teacher with vat=1234678910 saved successfully
+ 2026-02-17 11:35:14 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =1234678910 is already exist
+ 2026-02-17 11:35:14 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "teacher-insert": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'vat.teacher.exists.' for locale 'en_US'.
+	at org.springframework.context.support.AbstractMessageSource.getMessage(AbstractMessageSource.java:190)
+2026-02-17 11:35:34 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =1234678910 is already exist
+ 2026-02-17 11:35:34 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "teacher-insert": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'vat.teacher.exists.' for locale 'en_US'.
+	at org.springframework.context.support.AbstractMessageSource.getMessage(AbstractMessageSource.java:190)
+2026-02-17 11:35:47 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =1234678910 is already exist
+ 2026-02-17 11:35:47 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "teacher-insert": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'vat.teacher.exists.' for locale 'en_US'.
+	at org.springframework.context.support.AbstractMessageSource.getMessage(AbstractMessageSource.java:190)
+2026-02-17 11:35:56 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =1234678910 is already exist
+ 2026-02-17 11:35:56 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "teacher-insert": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'vat.teacher.exists.' for locale 'en_US'.
+	at org.springframework.context.support.AbstractMessageSource.getMessage(AbstractMessageSource.java:190)
+2026-02-17 11:35:59 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =1234678910 is already exist
+ 2026-02-17 11:35:59 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "teacher-insert": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'vat.teacher.exists.' for locale 'en_US'.
+	at org.springframework.context.support.AbstractMessageSource.getMessage(AbstractMessageSource.java:190)
+2026-02-17 11:36:38 INFO  g.a.c.s.service.TeacherService - Teacher with vat=12345678910 saved successfully
+ 2026-02-17 11:37:07 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =12345678910 is already exist
+ 2026-02-17 11:37:07 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "teacher-insert": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-insert" - line 53, col 42)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'vat.teacher.exists.' for locale 'en_US'.
+	at org.springframework.context.support.AbstractMessageSource.getMessage(AbstractMessageSource.java:190)
+2026-02-17 11:47:45 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-17 11:47:45 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-17 11:47:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-17 11:47:56 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-17 11:47:56 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 370048 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-17 11:47:56 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-17 11:47:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-17 11:47:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 2 JPA repository interfaces.
+ 2026-02-17 11:47:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-17 11:47:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2772 ms
+ 2026-02-17 11:48:00 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-17 11:48:00 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.037s)
+ 2026-02-17 11:48:00 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-17 11:48:00 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-17 11:48:00 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-17 11:48:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-17 11:48:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-17 11:48:01 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-17 11:48:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-17 11:48:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-17 11:48:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-17 11:48:04 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 8.336 seconds (process running for 8.939)
+ 2026-02-17 11:48:06 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-17 11:48:06 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-02-17 11:48:06 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =12345678910 is already exist
+ 2026-02-17 11:48:28 WARN  g.a.c.s.v.TeacherInsertValidator - Save failed. Teacher with vat =1234678910 is already exist
+ 2026-02-17 11:49:29 INFO  g.a.c.s.service.TeacherService - Teacher with vat=200619951 saved successfully
+ 
