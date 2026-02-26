@@ -31,7 +31,7 @@
                 th:object="${teacherInsertDTO}">
             <div class="row">
                 <div class="col-lg-6 min-height-100">
-                    <label for="firstname">First Name:</label><br>
+                    <label for="firstname">Firstname:</label><br>
                     <input type="text" id="firstname" th:field="*{firstname}"/>
                     <div th:if="${#fields.hasErrors('firstname')}">
                         <p class="error" th:errors="*{firstname}"></p>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="col-lg-6 min-height-100">
-                    <label for="lastname">Lastname Name:</label><br>
+                    <label for="lastname">Lastname:</label><br>
                     <input type="text" id="lastname" th:field="*{lastname}"/>
                     <div th:if="${#fields.hasErrors('lastname')}">
                         <p class="error" th:errors="*{lastname}"></p>
