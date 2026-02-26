@@ -1,0 +1,700 @@
+2026-02-25 10:03:50 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 10:03:50 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 10:03:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 10:04:15 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 10:04:15 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1094934 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 10:04:15 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 10:04:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 10:04:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 10:04:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 10:04:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3620 ms
+ 2026-02-25 10:04:20 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 10:04:21 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.181s)
+ 2026-02-25 10:04:21 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 10:04:21 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 10:04:22 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 10:04:22 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 10:04:23 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 10:04:24 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 10:04:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 10:04:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 10:04:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 10:04:27 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 14.405 seconds (process running for 15.323)
+ 2026-02-25 10:04:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 10:04:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-02-25 13:53:08 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 13:53:08 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 13:53:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 14:58:15 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 14:58:15 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1100714 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 14:58:15 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 14:58:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 14:58:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 14:58:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 14:58:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3368 ms
+ 2026-02-25 14:58:20 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 14:58:20 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.148s)
+ 2026-02-25 14:58:20 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 14:58:20 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 14:58:20 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 14:58:21 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 14:58:21 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 14:58:21 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 14:58:22 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 14:58:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 14:58:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 14:58:23 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 10.865 seconds (process running for 11.622)
+ 2026-02-25 14:58:30 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 14:58:30 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2026-02-25 14:58:35 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 14:58:43 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 14:59:33 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-9] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 14:59:49 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-10] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:01:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 15:01:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 15:01:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:01:54 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:01:54 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1101101 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:01:54 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 15:01:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:01:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:01:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 15:01:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1826 ms
+ 2026-02-25 15:01:56 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:01:57 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.048s)
+ 2026-02-25 15:01:57 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:01:57 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:01:57 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:01:57 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:01:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 15:01:57 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 15:01:58 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 15:01:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:01:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 15:01:59 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 6.76 seconds (process running for 7.472)
+ 2026-02-25 15:02:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 15:02:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-02-25 15:02:09 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:04:20 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 15:04:20 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 15:04:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:04:27 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:04:27 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1101365 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:04:27 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 15:04:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:04:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:04:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 15:04:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2347 ms
+ 2026-02-25 15:04:31 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:04:31 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.073s)
+ 2026-02-25 15:04:31 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:04:31 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:04:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:04:32 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:04:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 15:04:33 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 15:04:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 15:04:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:04:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 15:04:37 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 9.982 seconds (process running for 10.473)
+ 2026-02-25 15:07:07 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 15:07:07 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 15:07:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:07:19 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:07:20 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1101655 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:07:20 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 15:07:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:07:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:07:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 15:07:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2119 ms
+ 2026-02-25 15:07:23 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:07:23 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.044s)
+ 2026-02-25 15:07:23 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:07:23 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:07:23 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:07:23 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:07:24 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 15:07:24 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 15:07:25 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 15:07:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:07:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 15:07:27 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 7.871 seconds (process running for 8.357)
+ 2026-02-25 15:07:31 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 15:07:31 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+ 2026-02-25 15:07:35 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:07:42 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:07:43 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:10:09 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 15:10:09 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 15:10:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:10:23 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:10:23 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1102012 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:10:23 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 15:10:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:10:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:10:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 15:10:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1903 ms
+ 2026-02-25 15:10:26 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:10:26 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.043s)
+ 2026-02-25 15:10:26 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:10:26 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:10:27 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:10:27 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:10:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 15:10:27 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 15:10:28 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 15:10:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:10:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 15:10:31 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 8.192 seconds (process running for 8.681)
+ 2026-02-25 15:10:31 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 15:10:31 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-02-25 15:10:32 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:10:37 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:10:52 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:12:52 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:12:53 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:12:53 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1102393 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:12:53 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 15:12:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:12:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 267 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:12:59 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:13:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 15:13:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6163 ms
+ 2026-02-25 15:13:25 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:13:31 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:02.715s)
+ 2026-02-25 15:13:32 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:13:33 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:13:44 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:13:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:46:59 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:46:59 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 5936 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:46:59 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 15:47:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:47:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:47:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 15:47:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2015 ms
+ 2026-02-25 15:47:03 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:47:03 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.080s)
+ 2026-02-25 15:47:03 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:47:03 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:47:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:47:03 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:47:04 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 15:47:04 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 15:47:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 15:47:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:47:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 15:47:06 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 7.564 seconds (process running for 8.198)
+ 2026-02-25 15:47:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 15:47:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+ 2026-02-25 15:47:08 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:47:19 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 15:56:19 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 15:56:19 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 15:56:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:58:21 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:58:21 INFO  g.a.c.s.SchoolappApplicationTests - Starting SchoolappApplicationTests using Java 21.0.10 with PID 6948 (started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:58:21 INFO  g.a.c.s.SchoolappApplicationTests - The following 1 profile is active: "dev"
+ 2026-02-25 15:58:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:58:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:58:24 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:58:24 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.053s)
+ 2026-02-25 15:58:24 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:58:24 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:58:25 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:58:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:58:25 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 15:58:25 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 15:58:27 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 15:58:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:58:28 INFO  g.a.c.s.SchoolappApplicationTests - Started SchoolappApplicationTests in 8.194 seconds (process running for 10.165)
+ 2026-02-25 15:58:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:58:37 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 15:58:37 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 7126 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 15:58:37 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 15:58:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 15:58:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 15:58:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 15:58:39 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1782 ms
+ 2026-02-25 15:58:40 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 15:58:40 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.046s)
+ 2026-02-25 15:58:40 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 15:58:40 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 15:58:40 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 15:58:40 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 15:58:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 15:58:41 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 15:58:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 15:58:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 15:58:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 15:58:45 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 8.187 seconds (process running for 8.57)
+ 2026-02-25 15:58:52 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 15:58:52 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-02-25 15:58:52 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:00:01 INFO  g.a.c.s.service.TeacherService - Teacher with vat=666666155 saved successfully
+ 2026-02-25 16:00:22 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:03:43 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:03:44 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:03:45 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:03:46 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:03:48 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:03:48 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 7593 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:03:48 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:03:48 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:03:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:03:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:03:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:03:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2057 ms
+ 2026-02-25 16:03:51 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:03:51 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.045s)
+ 2026-02-25 16:03:51 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:03:51 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:03:51 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:03:51 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:03:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:03:52 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:03:54 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:03:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:03:55 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+ 2026-02-25 16:03:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:03:55 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+ 2026-02-25 16:04:20 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:04:20 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 7829 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:04:20 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:04:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:04:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:04:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:04:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1767 ms
+ 2026-02-25 16:04:23 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:04:23 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.038s)
+ 2026-02-25 16:04:23 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:04:23 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:04:24 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:04:24 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:04:24 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:04:24 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:04:25 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:04:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:04:26 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+ 2026-02-25 16:04:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:04:26 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+ 2026-02-25 16:07:27 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:07:27 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 8063 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:07:27 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:07:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:07:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:07:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:07:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1930 ms
+ 2026-02-25 16:07:30 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:07:31 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.084s)
+ 2026-02-25 16:07:31 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:07:31 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:07:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:07:31 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:07:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:07:32 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:07:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:07:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:07:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 16:07:34 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 8.14 seconds (process running for 9.078)
+ 2026-02-25 16:07:49 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 16:07:49 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2026-02-25 16:07:49 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:08:09 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "teachers": Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacher.firstname" (template: "teachers" - line 47, col 17)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstname' cannot be found on object of type 'gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+2026-02-25 16:09:54 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 16:09:54 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 16:09:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:10:01 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:10:01 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 8358 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:10:01 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:10:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:10:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:10:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:10:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1698 ms
+ 2026-02-25 16:10:03 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:10:04 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.044s)
+ 2026-02-25 16:10:04 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:10:04 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:10:04 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:10:04 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:10:04 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:10:04 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:10:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:10:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:10:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 16:10:06 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 6.173 seconds (process running for 6.693)
+ 2026-02-25 16:10:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 16:10:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-02-25 16:11:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 16:11:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 16:11:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:11:39 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:11:39 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 8577 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:11:39 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:11:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:11:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:11:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:11:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1672 ms
+ 2026-02-25 16:11:41 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:11:41 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.039s)
+ 2026-02-25 16:11:41 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:11:41 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:11:41 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:11:41 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:11:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:11:42 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:11:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:11:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:11:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 16:11:44 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 5.963 seconds (process running for 6.419)
+ 2026-02-25 16:11:50 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 16:11:50 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2026-02-25 16:13:56 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 16:13:56 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 16:13:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:14:08 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:14:08 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 8922 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:14:08 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:14:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:14:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:14:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:14:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1991 ms
+ 2026-02-25 16:14:11 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:14:11 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.048s)
+ 2026-02-25 16:14:11 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:14:11 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:14:11 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:14:11 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:14:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:14:12 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:14:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:14:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:14:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 16:14:14 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 7.831 seconds (process running for 8.352)
+ 2026-02-25 16:14:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 16:14:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-02-25 16:15:10 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 16:15:10 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 16:15:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:15:16 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:15:16 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 9120 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:15:16 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:15:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:15:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:15:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:15:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1698 ms
+ 2026-02-25 16:15:18 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:15:18 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.038s)
+ 2026-02-25 16:15:18 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:15:18 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:15:19 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:15:19 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:15:19 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:15:19 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:15:20 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:15:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:15:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 16:15:23 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 8.459 seconds (process running for 8.85)
+ 2026-02-25 16:15:27 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 16:15:27 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2026-02-25 16:53:26 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 16:53:26 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 16:53:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:53:40 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:53:40 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 10191 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:53:40 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:53:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-02-25 16:53:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-02-25 16:53:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:53:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:53:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:53:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2816 ms
+ 2026-02-25 16:53:44 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:53:44 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.070s)
+ 2026-02-25 16:53:44 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:53:44 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:53:45 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:53:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:53:45 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:53:45 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:53:49 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:53:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:53:51 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2026-02-25 16:53:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 16:53:51 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 12.599 seconds (process running for 13.567)
+ 2026-02-25 16:53:51 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-02-25 16:53:51 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-02-25 16:53:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:55:51 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-25 16:55:51 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 10447 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-02-25 16:55:51 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-25 16:55:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-02-25 16:55:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-02-25 16:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-25 16:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+ 2026-02-25 16:55:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-25 16:55:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2789 ms
+ 2026-02-25 16:55:55 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-25 16:55:55 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.076s)
+ 2026-02-25 16:55:56 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-02-25 16:55:56 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-02-25 16:55:56 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-25 16:55:56 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-25 16:55:56 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-25 16:55:57 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-25 16:55:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-25 16:55:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-25 16:56:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2026-02-25 16:56:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-25 16:56:00 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 10.972 seconds (process running for 12.484)
+ 2026-02-25 16:56:07 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-25 16:56:07 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+ 
