@@ -9,6 +9,8 @@ import gr.aueb.cf.schoolapp.model.Teacher;
 import gr.aueb.cf.schoolapp.model.static_data.Region;
 import gr.aueb.cf.schoolapp.repository.RegionRepository;
 import gr.aueb.cf.schoolapp.repository.TeacherRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -62,7 +64,17 @@ public class TeacherService implements ITeacherService{
         }
 
     }
+    @Override
     public boolean isTeacherExists(String vat){
         return teacherRepository.findByVat(vat).isPresent();
+    }
+
+    @Override
+    @Transactional(readOnly = true) //MOno gia read
+    public Page<TeacherReadOnlyDTO> getPaginatedTeachers(Pageable pageable) {
+
+        Page<Teacher> teachersPage = teacherRepository.findAll(pageable);
+        log.debug("Get paginated not deleted returned successfully page={} and size={}", teachersPage.getNumber(), teachersPage.getSize());
+        return  teachersPage.map(mapper::mapToTeacherReadOnlyDTO) ;
     }
 }
