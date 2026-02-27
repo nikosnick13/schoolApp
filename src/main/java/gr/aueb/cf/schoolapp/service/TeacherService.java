@@ -2,6 +2,8 @@ package gr.aueb.cf.schoolapp.service;
 
 import gr.aueb.cf.schoolapp.core.exceptions.EntityInvalidArgumentException;
 import gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException;
+import gr.aueb.cf.schoolapp.core.exceptions.EntityNotFoundException;
+import gr.aueb.cf.schoolapp.dto.TeacherEditDTO;
 import gr.aueb.cf.schoolapp.dto.TeacherInsertDTO;
 import gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO;
 import gr.aueb.cf.schoolapp.mapper.Mapper;
@@ -16,6 +18,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.Objects;
+import java.util.UUID;
 
 
 @Service                    //IoC container
@@ -76,5 +80,65 @@ public class TeacherService implements ITeacherService{
         Page<Teacher> teachersPage = teacherRepository.findAll(pageable);
         log.debug("Get paginated not deleted returned successfully page={} and size={}", teachersPage.getNumber(), teachersPage.getSize());
         return  teachersPage.map(mapper::mapToTeacherReadOnlyDTO) ;
+    }
+
+
+    @Override
+    @Transactional(readOnly = true)
+    public TeacherEditDTO getTeacherByUUID(UUID uuid) throws EntityNotFoundException {
+
+        try{
+            Teacher teacher = teacherRepository.findByUuid(uuid)
+                    .orElseThrow( ()-> new EntityNotFoundException("Teacher with uuid = " + uuid + "not exist"));
+            log.debug("Get teacher by uuid = {} return successfully", uuid);
+            return mapper.mapToTeacherEditDTO(teacher);
+
+        }
+        catch (EntityNotFoundException ex){
+            log.error("Get teacher by uuid:{} failed",uuid);
+            throw ex;
+        }
+    }
+
+    @Override
+    @Transactional(rollbackFor = {EntityNotFoundException.class,EntityInvalidArgumentException.class, EntityAlreadyExistsException.class})
+    public TeacherReadOnlyDTO updateTeacher(TeacherEditDTO teacherEditDTO) throws EntityInvalidArgumentException,
+            EntityAlreadyExistsException,EntityNotFoundException {
+
+        try {
+            Teacher teacher = teacherRepository.findByUuid(teacherEditDTO.uuid())
+                            .orElseThrow(() -> new EntityNotFoundException("Teacher with Uuid: "+ teacherEditDTO.uuid()+ " not found"));
+
+            teacher.setFirstname(teacherEditDTO.firstname());
+            teacher.setLastname(teacherEditDTO.lastname());
+            if(!teacher.getVat().equals(teacherEditDTO.vat())){
+                if(teacherRepository.findByVat(teacherEditDTO.vat()).isPresent()){
+                    throw new EntityAlreadyExistsException("Teacher with vat " +teacherEditDTO.vat()+ " is already exist");
+                }
+                teacher.setVat(teacherEditDTO.vat());
+            }
+
+            if(!Objects.equals(teacherEditDTO.regionId(),teacher.getRegion().getId())){
+                Region region =  regionRepository.findById(teacherEditDTO.regionId())
+                        .orElseThrow(() -> new EntityInvalidArgumentException("Region id: " + teacherEditDTO.regionId() + "invalid"));
+                Region oldRegion = teacher.getRegion();
+                if(oldRegion  != null) oldRegion.removeTeacher(teacher);
+                region.addTeacher(teacher);
+            }
+
+            teacherRepository.save(teacher);
+            log.info("Teacher with uuid= {} update successfully",teacher.getUuid());
+            return mapper.mapToTeacherReadOnlyDTO(teacher);
+
+        } catch (EntityAlreadyExistsException ex){
+            log.error("Teacher with uuid = {} and vat = {} is already exist",teacherEditDTO.uuid(),teacherEditDTO.vat());
+            throw ex;
+        }catch (EntityInvalidArgumentException ex){
+            log.error("Update failed for teacher with uuid: {}. Region id={} is not valid",teacherEditDTO.uuid(),teacherEditDTO.regionId());
+            throw ex;
+        }catch (EntityNotFoundException ex){
+            log.error("Update failed for teacher with uuid: {}.Teacher not found", teacherEditDTO.uuid());
+            throw ex;
+        }
     }
 }
