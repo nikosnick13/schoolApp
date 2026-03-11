@@ -1,6 +1,5 @@
 package gr.aueb.cf.schoolapp.controller;
 
-
 import gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException;
 import gr.aueb.cf.schoolapp.core.exceptions.EntityInvalidArgumentException;
 import gr.aueb.cf.schoolapp.core.exceptions.EntityNotFoundException;
@@ -77,7 +76,8 @@ public class TeacherController {
 
     @GetMapping({"", "/"})
     public String getPaginationTeachers(@PageableDefault(page = 0, size = 5, sort = "lastname") Pageable pageable, Model model ){
-        Page<TeacherReadOnlyDTO> teachersPage = teacherService.getPaginatedTeachers(pageable);
+        Page<TeacherReadOnlyDTO> teachersPage = teacherService.getPaginatedTeachersDeleteFalse(pageable);
+        //Page<TeacherReadOnlyDTO> teachersPage = teacherService.getPaginatedTeachers(pageable);
         // Page<TeacherReadOnlyDTO> teachersPage = new PageImpl<>(
 //                Stream.of(
 //                        new TeacherReadOnlyDTO( "abc123", "Nikos","Nikolaidis","123","Athens"),
@@ -152,5 +152,24 @@ public class TeacherController {
 //        );
     }
 
+    @PostMapping("/delete/{uuid}")
+    public String deleteTeacher(@PathVariable UUID uuid, RedirectAttributes redirectAttributes,
+                                Model model){
 
+        try {
+            TeacherReadOnlyDTO readOnlyDTO = teacherService.deleteTeacher(uuid);
+            redirectAttributes.addFlashAttribute("teacherReadOnlyDTO",readOnlyDTO);
+            return  "redirect:/teachers/delete-success";
+
+        }catch (EntityNotFoundException ex){
+
+            model.addAttribute("errorMessage", ex.getMessage());
+            return "teachers";
+        }
+    }
+
+    @GetMapping("/delete-success")
+    public String deleteSuccess(Model model){
+        return "delete-teacher-success";
+    }
 }

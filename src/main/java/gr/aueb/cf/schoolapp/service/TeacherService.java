@@ -11,6 +11,7 @@ import gr.aueb.cf.schoolapp.model.Teacher;
 import gr.aueb.cf.schoolapp.model.static_data.Region;
 import gr.aueb.cf.schoolapp.repository.RegionRepository;
 import gr.aueb.cf.schoolapp.repository.TeacherRepository;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +26,7 @@ import java.util.UUID;
 @Service                    //IoC container
 @RequiredArgsConstructor    //DI
 @Slf4j                      //Logger
+
 public class TeacherService implements ITeacherService{
 
     private final TeacherRepository teacherRepository;
@@ -68,6 +70,7 @@ public class TeacherService implements ITeacherService{
         }
 
     }
+
     @Override
     public boolean isTeacherExists(String vat){
         return teacherRepository.findByVat(vat).isPresent();
@@ -78,10 +81,19 @@ public class TeacherService implements ITeacherService{
     public Page<TeacherReadOnlyDTO> getPaginatedTeachers(Pageable pageable) {
 
         Page<Teacher> teachersPage = teacherRepository.findAll(pageable);
-        log.debug("Get paginated not deleted returned successfully page={} and size={}", teachersPage.getNumber(), teachersPage.getSize());
+        log.debug("Get paginated returned successfully page={} and size={}", teachersPage.getNumber(), teachersPage.getSize());
         return  teachersPage.map(mapper::mapToTeacherReadOnlyDTO) ;
     }
 
+    @Override
+    @Transactional(readOnly = true) //MOno gia read
+    public Page<TeacherReadOnlyDTO> getPaginatedTeachersDeleteFalse(Pageable pageable) {
+
+        Page<Teacher> teachersPage = teacherRepository.findAllByDeleteFalse(pageable);
+        log.debug("Get paginated not deleted returned successfully page={} and size={}", teachersPage.getNumber(), teachersPage.getSize());
+        return teachersPage.map(mapper::mapToTeacherReadOnlyDTO);
+
+    }
 
     @Override
     @Transactional(readOnly = true)
@@ -140,5 +152,29 @@ public class TeacherService implements ITeacherService{
             log.error("Update failed for teacher with uuid: {}.Teacher not found", teacherEditDTO.uuid());
             throw ex;
         }
+    }
+
+    @Override
+    @Transactional(rollbackFor = {EntityNotFoundException.class})
+    public TeacherReadOnlyDTO deleteTeacher(UUID uuid) throws EntityNotFoundException {
+
+        try {
+           Teacher teacher = teacherRepository.findByUuidDeletedFalse(uuid)
+                   .orElseThrow(() -> new EntityNotFoundException("Teacher with Uuid: "+ uuid + " not found"));
+
+           teacher.softDelete();
+           //No save needed if Teacher is managed
+          // teacherRepository.save(teacher);
+            log.info("The teacher with uuid {} is delete", uuid);
+            return mapper.mapToTeacherReadOnlyDTO(teacher);
+
+        }catch (EntityNotFoundException ex){
+            log.error("Delete failed for teacher with uuid: {}.Teacher not found", uuid);
+            throw ex;
+            //Automatic rollback due to @Transactional annotation
+
+        }
+
+
     }
 }

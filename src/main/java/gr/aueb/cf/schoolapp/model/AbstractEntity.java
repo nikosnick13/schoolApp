@@ -11,6 +11,7 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.time.DateTimeException;
 import java.time.Instant;
 
 @MappedSuperclass //Διλωση οτι ειναι μονο super class και οτι μονο κλειρωνομιτε
@@ -28,4 +29,15 @@ public abstract class AbstractEntity {
     @LastModifiedDate
     @Column(name = "updated_at", nullable = false, columnDefinition = "DATETIME")
     private Instant updatedAt;
+
+    @Column(nullable = false)
+    private  boolean deleted;
+
+    @Column(name = "delete_at", nullable = false, columnDefinition = "DATETIME")
+    private Instant deleteAt;
+
+    public void softDelete(){
+        this.deleted = true;
+        this.deleteAt = Instant.now();
+    }
 }
