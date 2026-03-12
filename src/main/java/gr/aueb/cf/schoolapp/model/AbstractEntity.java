@@ -33,11 +33,11 @@ public abstract class AbstractEntity {
     @Column(nullable = false)
     private  boolean deleted;
 
-    @Column(name = "delete_at", nullable = false, columnDefinition = "DATETIME")
-    private Instant deleteAt;
+    @Column(name = "deleted_at", columnDefinition = "DATETIME")
+    private Instant deletedAt;
 
     public void softDelete(){
         this.deleted = true;
-        this.deleteAt = Instant.now();
+        this.deletedAt = Instant.now();
     }
 }
