@@ -1,0 +1,227 @@
+2026-03-11 13:35:09 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-11 13:35:09 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1079563 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-03-11 13:35:09 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-03-11 13:35:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-03-11 13:35:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-03-11 13:35:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-11 13:35:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+ 2026-03-11 13:35:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-11 13:35:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2010 ms
+ 2026-03-11 13:35:12 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-11 13:35:12 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.048s)
+ 2026-03-11 13:35:12 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 2
+ 2026-03-11 13:35:12 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `school9app` to version "3 - alter teachers add soft delete columns"
+ 2026-03-11 13:35:12 WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+ 2026-03-11 13:35:12 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `school9app` to version "4 - teachers soft delete indexes"
+ 2026-03-11 13:35:12 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `school9app`, now at version v4 (execution time 00:00.241s)
+ 2026-03-11 13:35:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-03-11 13:35:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-11 13:35:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-11 13:35:13 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-11 13:35:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-11 13:35:14 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+ 2026-03-11 13:35:14 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+ 2026-03-11 13:35:15 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:149)
+2026-03-11 15:51:52 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-11 15:51:52 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1082618 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-03-11 15:51:52 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-03-11 15:51:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-03-11 15:51:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-03-11 15:51:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-11 15:51:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144 ms. Found 2 JPA repository interfaces.
+ 2026-03-11 15:51:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-11 15:51:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3559 ms
+ 2026-03-11 15:51:57 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-11 15:51:57 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.159s)
+ 2026-03-11 15:51:57 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 4
+ 2026-03-11 15:51:57 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-03-11 15:51:58 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-03-11 15:51:58 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-11 15:51:58 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-11 15:51:58 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-11 15:52:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-11 15:52:00 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+ 2026-03-11 15:52:00 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+ 2026-03-11 15:52:00 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [delete_at] in table [teachers]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:149)
+2026-03-11 15:57:33 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-11 15:57:33 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1083016 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-03-11 15:57:33 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-03-11 15:57:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-03-11 15:57:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-03-11 15:57:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-11 15:57:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+ 2026-03-11 15:57:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-11 15:57:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1708 ms
+ 2026-03-11 15:57:36 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-11 15:57:36 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.043s)
+ 2026-03-11 15:57:36 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 4
+ 2026-03-11 15:57:36 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-03-11 15:57:36 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-03-11 15:57:36 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-11 15:57:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-11 15:57:37 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-11 15:57:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-11 15:57:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-11 15:57:38 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/controller/TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); Reason: Failed to create query for method public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); No property 'delete' found for type 'Teacher'; Did you mean 'deleted'
+ 2026-03-11 15:57:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-11 15:57:38 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/controller/TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); Reason: Failed to create query for method public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); No property 'delete' found for type 'Teacher'; Did you mean 'deleted'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); Reason: Failed to create query for method public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); No property 'delete' found for type 'Teacher'; Did you mean 'deleted'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); Reason: Failed to create query for method public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); No property 'delete' found for type 'Teacher'; Did you mean 'deleted'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); Reason: Failed to create query for method public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); No property 'delete' found for type 'Teacher'; Did you mean 'deleted'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract org.springframework.data.domain.Page gr.aueb.cf.schoolapp.repository.TeacherRepository.findAllByDeleteFalse(org.springframework.data.domain.Pageable); No property 'delete' found for type 'Teacher'; Did you mean 'deleted'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'delete' found for type 'Teacher'; Did you mean 'deleted'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+2026-03-11 16:00:51 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-11 16:00:52 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1083247 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-03-11 16:00:52 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-03-11 16:00:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-03-11 16:00:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-03-11 16:00:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-11 16:00:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+ 2026-03-11 16:00:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-11 16:00:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1974 ms
+ 2026-03-11 16:00:55 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-11 16:00:55 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.042s)
+ 2026-03-11 16:00:55 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 4
+ 2026-03-11 16:00:55 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-03-11 16:00:55 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-03-11 16:00:55 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-11 16:00:55 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-11 16:00:55 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-11 16:00:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-11 16:00:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-11 16:00:57 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/controller/TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); No property 'deleted' found for type 'UUID'; Traversed path: Teacher.uuid
+ 2026-03-11 16:00:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-11 16:00:57 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/controller/TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); No property 'deleted' found for type 'UUID'; Traversed path: Teacher.uuid
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); No property 'deleted' found for type 'UUID'; Traversed path: Teacher.uuid
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); No property 'deleted' found for type 'UUID'; Traversed path: Teacher.uuid
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); No property 'deleted' found for type 'UUID'; Traversed path: Teacher.uuid
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByUuidDeletedFalse(java.util.UUID); No property 'deleted' found for type 'UUID'; Traversed path: Teacher.uuid
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'deleted' found for type 'UUID'; Traversed path: Teacher.uuid
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+2026-03-11 16:02:25 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-11 16:02:25 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1083432 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-03-11 16:02:25 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-03-11 16:02:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-03-11 16:02:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-03-11 16:02:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-11 16:02:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+ 2026-03-11 16:02:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-11 16:02:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1949 ms
+ 2026-03-11 16:02:28 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-11 16:02:28 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.045s)
+ 2026-03-11 16:02:28 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 4
+ 2026-03-11 16:02:28 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-03-11 16:02:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-03-11 16:02:29 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-11 16:02:29 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-11 16:02:29 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-11 16:02:30 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-11 16:02:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-11 16:02:30 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/controller/TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); No property 'deleted' found for type 'String'; Traversed path: Teacher.vat
+ 2026-03-11 16:02:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-11 16:02:30 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/controller/TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); No property 'deleted' found for type 'String'; Traversed path: Teacher.vat
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherService' defined in file [/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main/gr/aueb/cf/schoolapp/service/TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); No property 'deleted' found for type 'String'; Traversed path: Teacher.vat
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'teacherRepository' defined in gr.aueb.cf.schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); No property 'deleted' found for type 'String'; Traversed path: Teacher.vat
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); No property 'deleted' found for type 'String'; Traversed path: Teacher.vat
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional gr.aueb.cf.schoolapp.repository.TeacherRepository.findByVatDeletedFalse(java.lang.String); No property 'deleted' found for type 'String'; Traversed path: Teacher.vat
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'deleted' found for type 'String'; Traversed path: Teacher.vat
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+2026-03-11 16:05:57 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-11 16:05:57 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 1083686 (/home/cyberpirate/IdeaProjects/schoolApp/build/classes/java/main started by cyberpirate in /home/cyberpirate/IdeaProjects/schoolApp)
+ 2026-03-11 16:05:57 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-03-11 16:05:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-03-11 16:05:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-03-11 16:05:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-11 16:05:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+ 2026-03-11 16:05:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-11 16:05:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1651 ms
+ 2026-03-11 16:06:00 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9app?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-11 16:06:00 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.038s)
+ 2026-03-11 16:06:00 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9app`: 4
+ 2026-03-11 16:06:00 INFO  o.f.core.internal.command.DbMigrate - Schema `school9app` is up to date. No migration necessary.
+ 2026-03-11 16:06:00 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-03-11 16:06:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-11 16:06:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-11 16:06:01 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-11 16:06:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-11 16:06:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-11 16:06:03 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2026-03-11 16:06:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-03-11 16:06:03 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 6.015 seconds (process running for 6.591)
+ 2026-03-11 16:06:13 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-03-11 16:06:13 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+ 2026-03-11 16:06:31 INFO  g.a.c.s.service.TeacherService - The teacher with uuid 128c1ac0-cfe3-43ad-a512-59ad91b43e7c is delete
+ 

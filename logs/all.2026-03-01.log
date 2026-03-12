@@ -1,0 +1,4 @@
+2026-03-01 12:18:39 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2026-03-01 12:18:39 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2026-03-01 12:18:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 
