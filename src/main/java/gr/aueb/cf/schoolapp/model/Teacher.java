@@ -40,7 +40,7 @@ public class Teacher extends AbstractEntity {
         this.uuid = UUID.randomUUID();
     }
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "region_id")
     private Region region;
 
