@@ -12,6 +12,8 @@ import org.springframework.security.config.annotation.web.reactive.EnableWebFlux
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 @Configuration //Create a bean from method
 @RequiredArgsConstructor //DI
@@ -19,11 +21,15 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity // Filter security
 
 public class SecurityConfig {
+
+    private final AuthenticationFailureHandler authFailureHandler;
+    private  final AuthenticationSuccessHandler authSuccessHandler;
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
 
         http
-                .csrf(AbstractHttpConfigurer::disable)
+               // .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/", "/index.html").permitAll()
                         .requestMatchers("/login").permitAll()
@@ -41,8 +47,8 @@ public class SecurityConfig {
                 )
                 .formLogin(formLogin -> formLogin
                            .loginPage("/login")
-//                        .successHandler(authSuccessHandler)
-//                        .failureHandler(authFailureHandler)
+                           .successHandler(authSuccessHandler)
+                          .failureHandler(authFailureHandler)
                 )
                 .logout(logout -> logout
                         .logoutSuccessUrl("/login?logout=")    // δουλεύει με post logout
