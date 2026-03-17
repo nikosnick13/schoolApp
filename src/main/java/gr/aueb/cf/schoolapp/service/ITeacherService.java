@@ -6,8 +6,6 @@ import gr.aueb.cf.schoolapp.core.exceptions.EntityNotFoundException;
 import gr.aueb.cf.schoolapp.dto.TeacherEditDTO;
 import gr.aueb.cf.schoolapp.dto.TeacherInsertDTO;
 import gr.aueb.cf.schoolapp.dto.TeacherReadOnlyDTO;
-import gr.aueb.cf.schoolapp.model.Teacher;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -28,5 +26,7 @@ public interface ITeacherService {
     TeacherReadOnlyDTO updateTeacher(TeacherEditDTO teacherEditDTO) throws  EntityNotFoundException,EntityInvalidArgumentException , EntityAlreadyExistsException;
 
     TeacherReadOnlyDTO deleteTeacher(UUID uuid) throws EntityNotFoundException;
+
+    TeacherEditDTO getTeacherByUUIDDeletedFalse(UUID uuid) throws EntityNotFoundException;
 
 }
