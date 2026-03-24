@@ -28,8 +28,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
 
+
         http
-               // .csrf(AbstractHttpConfigurer::disable)
+                .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/", "/index.html").permitAll()
                         .requestMatchers("/login").permitAll()
@@ -46,9 +47,9 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin
-                           .loginPage("/login")
-                           .successHandler(authSuccessHandler)
-                          .failureHandler(authFailureHandler)
+                        .loginPage("/login")
+                        .successHandler(authSuccessHandler)
+                        .failureHandler(authFailureHandler)
                 )
                 .logout(logout -> logout
                         .logoutSuccessUrl("/login?logout=")    // δουλεύει με post logout
@@ -57,7 +58,6 @@ public class SecurityConfig {
                 );
         return http.build();
     }
-
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(12);
