@@ -14,7 +14,9 @@ java {
         vendor = JvmVendorSpec.AMAZON
 	}
 }
-
+bootJar{
+    archiveFileName = "schoolapp.jar"
+}
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
